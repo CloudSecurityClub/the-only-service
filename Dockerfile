@@ -1,6 +1,6 @@
 # Base image for our service
-# We donot have way to authenticate to the private registry so we are using the public image.
-FROM 593793030857.dkr.ecr.ap-south-1.amazonaws.com/the-only-service:latest
+# We do not have a way to authenticate to the private registry, so we are using the public registry.
+FROM public.ecr.aws/i8x8s1y9/the-only-service:latest
 
 # Set working directory
 WORKDIR /app
